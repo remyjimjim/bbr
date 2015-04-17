@@ -26,7 +26,7 @@
 		<link>
 			<name>.link_to_grails_plugins</name>
 			<type>2</type>
-			<location>C:/Dev/Projects/Juno/sandbox/bbr/target/work/plugins</location>
+			<location>C:/Dev/Projects/Juno/grails/237/bbr/target/work/plugins</location>
 		</link>
 	</linkedResources>
 </projectDescription>

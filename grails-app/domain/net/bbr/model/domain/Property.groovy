@@ -9,6 +9,10 @@ class Property {
 	
 	static constraints = {  
 		address nullable: false
+		price nullable: false
+		houseSize nullable: false
+		active nullable: false
+		propertyType nullable: false
 		mls nullable: true
 		propertyTax nullable: true 
 		assessedValue nullable: true 
@@ -18,17 +22,14 @@ class Property {
 		internetSvc nullable: true
 		pricePerSqFt nullable: true 
 		description nullable: true 
-		active nullable: false 
  		status nullable: true 
  		taxKey nullable: true 
 		phoneSvc nullable: true
 		tenure nullable: true 
 		tvSvc nullable: true
-        propertyType nullable: false 
         beds nullable: true 
         baths nullable: true 
         halfbaths nullable: true 
-        houseSize nullable: false 
         houseSizeUnits nullable: true 
         parkingSpaces nullable: true 
         parkingType nullable: true 
@@ -87,7 +88,6 @@ class Property {
         zestimateLastUpdated nullable: true 
         rentEstimate nullable: true 
         rentEstimateLastUpdated nullable: true 
-        price nullable: false         
         originalListPrice nullable: true 
         priceChange nullable: true 
         homeOwnerIns nullable: true 

@@ -3,14 +3,15 @@ package net.bbr.model.domain
 import java.util.Date;
 
 class Image {  
-	static belongsTo = [property: Property]	//bi-directional one to many, if property is deleted then so are images.
+	static belongsTo = [myProperty: Property]	//bi-directional one to many, if property is deleted then so are images.
 	static mapping = {						// Note: batchSize - Lazy fetching optimization
 		batchSize 10
 		content sqlType: 'mediumblob'
+		myProperty column: 'property_id'
 	}										
 	
 	static constraints = {
-		property nullable: false
+		myProperty nullable: false
 		content nullable: false
 		type nullable: false
 		width nullable: true
@@ -18,7 +19,7 @@ class Image {
 		updateUser nullable: true
 	}
 	
-	Property 	property
+	Property 	myProperty
 	byte[] 		content = []
 	int			width = 0
 	int			height = 0
@@ -29,7 +30,8 @@ class Image {
 	
 	public String toString() {
 		return """Image:
-		property 			--	${property}
+
+		property 			--	${myProperty}
 		width				--  ${width}
 		height				--  ${height}
 		dateCreated 		--	${dateCreated}
