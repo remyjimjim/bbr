@@ -7,6 +7,11 @@ class Property {
 	
 	//static hasMany = [images: Image]
 	
+	/* Don't forget, if you ever extend this class you can use:
+	static constraints = {
+		importFrom Property
+		...
+	*/
 	static constraints = {  
 		address nullable: false
 		price nullable: false
