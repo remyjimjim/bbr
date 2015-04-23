@@ -1,6 +1,6 @@
 package net.bbr.model.domain
 
-import java.sql.Date;
+import java.util.Date;
 
 
 class PropertyHistory {
