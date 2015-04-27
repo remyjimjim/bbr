@@ -1,7 +1,7 @@
-package net.bbr.model.domain.test.integration
+package net.bbr
 
 import spock.lang.*
-import net.bbr.model.domain.Property
+import net.bbr.Property
 
 /**
  *

@@ -1,4 +1,4 @@
-package net.bbr.model.domain
+package net.bbr
 
 import java.util.Date;
 

@@ -1,11 +1,11 @@
-package net.bbr.model.domain.test.integration
+package net.bbr
 
 import java.util.Date;
 
 import spock.lang.*
-import net.bbr.model.domain.Image
-import net.bbr.model.domain.Property
-import net.bbr.model.domain.Address
+import net.bbr.Image
+import net.bbr.Property
+import net.bbr.Address
 
 /**
  *

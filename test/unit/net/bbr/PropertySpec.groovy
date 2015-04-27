@@ -1,13 +1,14 @@
-package net.bbr.model.domain
+package net.bbr
 
+import net.bbr.Property;
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(PropertyHistory)
-class PropertyHistorySpec extends Specification {
+@TestFor(Property)
+class PropertySpec extends Specification {
 
     def setup() {
     }
